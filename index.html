@@ -6,14 +6,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
      <script src="main.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+     <script>
+         
+         $(document).ready(function(){
+                       
+         });
+            
+     </script>
 <style media="screen">
-  #colo-r{
-background:#FAFAFA;
 
-  }
 </style>
     </head>
     <body>
+        <div id = "navbar">
+            <ul>
+                <li  id="home"><a href="#">Home</a></li>
+                <li onclick=" $('body,html').animate({scrollTop:document.getElementById('head1').getBoundingClientRect().top-30}, 400);" id="features"><a href="#">Features</a></li>
+                <li onclick=" $('body,html').animate({scrollTop:document.getElementById('preoder').getBoundingClientRect().top-30}, 400);" id="order"><a href="#">Preoder</a></li>
+            </ul>
+        </div>
+        <br>
+        <br>
 <center><br><span id="phoneHeading">The Future is here <br> <b>The iPhone X</b></span><br>A <span id="ityped"></span> Phone  </center>
         <div id="phone"></div>
         <script>
@@ -30,7 +45,7 @@ background:#FAFAFA;
         <center>
             <br>
 
-                <h1>The iPhone X</h1>
+                <h1 id="head1">The iPhone X</h1>
                 <p class="description">Our vision has always been to create an iPhone that is entirely screen. One so immersive the device itself disappears into the experience. And so intelligent it can respond to a tap, your voice and even a glance.<br><br> With iPhone X, that vision is now a reality. Say hello to the future.</p>
 
                 <!-- iPhone-->
